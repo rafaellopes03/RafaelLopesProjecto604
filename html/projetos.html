@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portefólio - Rafael Lopes</title>
+    <meta name="description" content="Os meus projetos de desenvolvimento web em HTML, CSS e JavaScript." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/jpg" href="/imgs/favicon.jpg">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="nav-inner">
+                <a href="/html/index.html" class="logo-holder">
+                    <div class="logo">R</div>
+                    <div class="logo-text">Rafael Lopes</div>
+                </a>
+
+                <ul class="nav-links" id="menu">
+                    <li><a href="/html/index.html">Início</a></li>
+                    <li><a href="/html/sobre.html">Sobre</a></li>
+                    <li><a href="/html/projetos.html" class="active">Projetos</a></li>
+                    <li><a href="/html/contacto.html" class="button">Contactos</a></li>
+                </ul>
+
+                <a href="#" class="mobile-toggle" onclick="toggleMobileMenu(); return false;">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Menu mobile fullscreen -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="/html/index.html">Início</a>
+            <a href="/html/sobre.html">Sobre</a>
+            <a href="/html/projetos.html">Projetos</a>
+            <a href="/html/contacto.html">Contactos</a>
+        </div>
+    </header>
+
+    <main style="padding-top: 80px;">
+
+        <!-- PAGE HEADER -->
+        <div class="page-header">
+            <div class="page-header-inner container">
+                <span class="section-label">O meu trabalho</span>
+                <h1>Projetos</h1>
+                <p>Uma coleção dos projetos que desenvolvi durante a minha formação e nos meus momentos de prática pessoal.</p>
+            </div>
+        </div>
+
+        <!-- PROJETOS SECTION -->
+        <section class="section">
+            <div class="container">
+
+                <!-- Filtros -->
+                <div class="projects-filter reveal">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="html-css">HTML & CSS</button>
+                    <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                    <button class="filter-btn" data-filter="fullpage">Página Completa</button>
+                </div>
+
+                <!-- Grid de Projetos -->
+                <div class="projects-grid">
+
+                    <!-- Projeto 1 -->
+                    <article class="project-card reveal" data-category="javascript">
+                        <div class="project-thumb">
+                            <img src="/imgs/javascript.png" style="width: 75px;">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JS</span>
+                            </div>
+                            <h3 class="project-title">Loja Online — Frontend</h3>
+                            <p class="project-desc">Interface completa de e-commerce com carrinho de compras dinâmico, filtros por categoria e layout responsivo. Primeiro projeto com manipulação de DOM avançada.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">🔗 Demo</a>
+                                <a href="#" class="project-link">📁 GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 2 -->
+                    <article class="project-card reveal" data-category="html-css">
+                        <div class="project-thumb">
+                            <img src="/imgs/html.png" style="width: 75px;">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS Grid</span>
+                            </div>
+                            <h3 class="project-title">Blog Pessoal — Layout</h3>
+                            <p class="project-desc">Design editorial moderno construído com CSS Grid. Inclui página de artigos, categorias e layout responsivo para mobile e desktop.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">🔗 Demo</a>
+                                <a href="#" class="project-link">📁 GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 3 -->
+                    <article class="project-card reveal" data-category="javascript">
+                        <div class="project-thumb">
+                            <img src="/imgs/javascript.png" style="width: 75px;">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">CSS</span>
+                            </div>
+                            <h3 class="project-title">App To-Do Interativo</h3>
+                            <p class="project-desc">Gestor de tarefas com funcionalidade de adicionar, eliminar e marcar tarefas concluídas. Dados guardados em localStorage para persistência.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">🔗 Demo</a>
+                                <a href="#" class="project-link">📁 GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 4 -->
+                    <article class="project-card reveal" data-category="html-css">
+                        <div class="project-thumb">
+                            <img src="/imgs/css.png" style="width: 75px;">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS Flexbox</span>
+                            </div>
+                            <h3 class="project-title">Dashboard Meteorológico</h3>
+                            <p class="project-desc">Interface visual para exibição de dados meteorológicos com cartões animados, ícones SVG e layout adaptável a qualquer ecrã.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">🔗 Demo</a>
+                                <a href="#" class="project-link">📁 GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 5 -->
+                    <article class="project-card reveal" data-category="fullpage">
+                        <div class="project-thumb">
+                            <img src="/imgs/html.png" style="width: 75px;">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JS</span>
+                            </div>
+                            <h3 class="project-title">Site de Restaurante</h3>
+                            <p class="project-desc">Site completo para restaurante com menu interativo, galeria de pratos, formulário de reservas e mapa de localização. Totalmente responsivo.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">🔗 Demo</a>
+                                <a href="#" class="project-link">📁 GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 6 -->
+                    <article class="project-card reveal" data-category="javascript">
+                        <div class="project-thumb">
+                            <img src="/imgs/javascript.png" style="width: 75px;">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">CSS</span>
+                            </div>
+                            <h3 class="project-title">Calculadora Web</h3>
+                            <p class="project-desc">Calculadora funcional com operações básicas e científicas. Interface limpa, teclado suportado e histórico de cálculos.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">🔗 Demo</a>
+                                <a href="#" class="project-link">📁 GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+                <!-- Fim da grid de projetos -->
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container" style="text-align:center;">
+                <span class="section-label reveal" style="justify-content:center;">Vamos trabalhar juntos</span>
+                <h2 class="section-title reveal" style="max-width:500px; margin:0 auto 16px;">Tens um projeto em mente?</h2>
+                <p class="reveal" style="margin:0 auto 36px; max-width:460px;">Estou sempre aberto a novas oportunidades e desafios interessantes. Entra em contacto!</p>
+                <a href="#" class="button reveal">Fala Comigo →</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="/html/index.html" class="logo-holder footer-logo-holder">
+                <div class="logo-sm">R</div>
+                <div class="logo-text">Rafael Lopes</div>
+            </a>
+            <p class="footer-copy">© 2025 Rafael Lopes | UC604</p>
+            <ul class="footer-links">
+                <li><a href="/html/index.html">Início</a></li>
+                <li><a href="/html/sobre.html">Sobre</a></li>
+                <li><a href="/html/projetos.html">Projetos</a></li>
+                <li><a href="/html/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

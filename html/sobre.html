@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portefólio - Rafael Lopes</title>
+    <meta name="description" content="Saiba mais sobre mim, as minhas competências e o meu percurso em desenvolvimento web." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/jpg" href="/imgs/favicon.jpg">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="nav-inner">
+                <a href="index.html" class="logo-holder">
+                    <div class="logo">R</div>
+                    <div class="logo-text">Rafael Lopes</div>
+                </a>
+
+                <ul class="nav-links" id="menu">
+                    <li><a href="/html/index.html">Início</a></li>
+                    <li><a href="/html/sobre.html" class="active">Sobre</a></li>
+                    <li><a href="/html/projetos.html">Projetos</a></li>
+                    <li><a href="/html/contacto.html" class="button">Contactos</a></li>
+                </ul>
+
+                <a href="#" class="mobile-toggle" onclick="toggleMobileMenu(); return false;">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Menu mobile fullscreen -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="/html/index.html">Início</a>
+            <a href="/html/sobre.html">Sobre</a>
+            <a href="/html/projetos.html">Projetos</a>
+            <a href="/html/contacto.html">Contactos</a>
+        </div>
+    </header>
+
+    <main style="padding-top: 80px;">
+
+        <!-- PAGE HEADER -->
+        <div class="page-header">
+            <div class="page-header-inner container">
+                <span class="section-label">Conhece-me melhor</span>
+                <h1>Sobre Mim</h1>
+                <p>Sou um programador Full Stack em formação, apaixonado por construir soluções completas do zero.</p>
+            </div>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <section class="section">
+            <div class="container">
+                <div class="about-grid">
+
+                    <!-- Imagem/Avatar -->
+                    <div class="about-image-wrap reveal">
+                        <div class="about-image-placeholder">
+                            <img src="/imgs/hero-image.png" alt="Rafael Lopes" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">
+                        </div>
+                    </div>
+
+                    <!-- Texto -->
+                    <div class="about-text">
+                        <span class="section-label reveal">A minha história</span>
+                        <h2 class="section-title reveal">
+                            Transformo ideias em<br>
+                            <span style="color: var(--blue);">código funcional</span>
+                        </h2>
+
+                        <p class="reveal">
+                            Olá! Sou o Rafael, estudante de programação web, atualmente a aprender e a desenvolver as minhas competências em HTML, CSS, JavaScript, Java e C#. Tenho uma grande paixão por tecnologia e design, e estou empenhado em criar projetos que combinem estética com funcionalidade.
+                        </p>
+                        <p class="reveal" style="margin-top: 16px;">
+                            Atualmente estou a frequentar uma formação em Programação de Sistema de Informação onde tenho a oportunidade de trabalhar em projetos práticos que me ajudam a consolidar os conhecimentos adquiridos. Cada projeto é uma oportunidade de aprender algo novo.
+                        </p>
+                        <p class="reveal" style="margin-top: 16px;">
+                            Quando não estou a programar, passo o tempo a explorar novas tecnologias, a ver tutoriais e a tentar perceber como funciona o mundo do software por dentro.
+                        </p>
+
+                        <div class="about-actions reveal">
+                            <a href="/html/contacto.html" class="button">Contacta-me</a>
+                            <a href="#" class="button white">Download CV ↓</a>
+                        </div>
+
+                        <!-- Skills grid -->
+                        <div class="skills-grid">
+                            <div class="skill-item reveal">
+                                <div class="skill-icon">
+                                    <img src="/imgs/html.png">
+                                </div>
+                                <div class="skill-name">HTML5</div>
+                                <div class="skill-level">Estrutura semântica</div>
+                            </div>
+                            <div class="skill-item reveal">
+                                <div class="skill-icon">
+                                    <img src="/imgs/css.png"> 
+                                </div>
+                                <div class="skill-name">CSS3</div>
+                                <div class="skill-level">Flexbox · Grid · Animações</div>
+                            </div>
+                            <div class="skill-item reveal">
+                                <div class="skill-icon">
+                                    <img src="/imgs/javascript.png"> 
+                                </div>
+                                <div class="skill-name">JavaScript</div>
+                                <div class="skill-level">DOM · Eventos · APIs</div>
+                            </div>
+                            <div class="skill-item reveal">
+                                <div class="skill-icon">
+                                    <img src="/imgs/java.png"> 
+                                </div>                                <div class="skill-name">Java</div>
+                                <div class="skill-level">POO · Backend</div>
+                            </div>
+                            <div class="skill-item reveal">
+                                <div class="skill-icon">
+                                    <img src="/imgs/csharp.png"> 
+                                </div>
+                                <div class="skill-name">C#</div>
+                                <div class="skill-level">.NET · Backend</div>
+                            </div>
+                            <div class="skill-item reveal">
+                                <div class="skill-icon">
+                                    <img src="/imgs/mysqlworkbench.png"> 
+                                    <img src="/imgs/ssms.png">
+                                </div>
+                                <div class="skill-name">SQL</div>
+                                <div class="skill-level">MySQL · SSMS</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha do tempo -->
+                <div class="timeline reveal">
+                    <h3 class="timeline-title">Percurso & Formação</h3>
+                    <div class="timeline-list">
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2025 — Presente</div>
+                            <div class="timeline-role">Formação em Programação</div>
+                            <div class="timeline-place">HTML · CSS · JavaScript · Java · C# · SQL · Projetos práticos</div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2024</div>
+                            <div class="timeline-role">Primeiros passos em programação</div>
+                            <div class="timeline-place">Cursos online · Tutoriais · Projetos pessoais</div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2023</div>
+                            <div class="timeline-role">Descoberta do desenvolvimento web</div>
+                            <div class="timeline-place">HTML básico · CSS fundamental</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container" style="text-align:center;">
+                <span class="section-label reveal" style="justify-content:center;">Vamos trabalhar juntos</span>
+                <h2 class="section-title reveal" style="max-width:500px; margin:0 auto 16px;">Tens um projeto em mente?</h2>
+                <p class="reveal" style="margin:0 auto 36px; max-width:460px;">Estou sempre aberto a novas oportunidades e desafios interessantes. Entra em contacto!</p>
+                <a href="/html/contacto.html" class="button reveal">Fala Comigo →</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="index.html" class="logo-holder footer-logo-holder">
+                <div class="logo-sm">R</div>
+                <div class="logo-text">Rafael Lopes</div>
+            </a>
+            <p class="footer-copy">© 2025 Rafael Lopes | UC604</p>
+            <ul class="footer-links">
+                <li><a href="/html/index.html">Início</a></li>
+                <li><a href="/html/sobre.html">Sobre</a></li>
+                <li><a href="/html/projetos.html">Projetos</a></li>
+                <li><a href="/html/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

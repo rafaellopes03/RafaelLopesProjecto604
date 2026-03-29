@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portefólio - Rafael Lopes</title>
+    <meta name="description" content="Entra em contacto para projetos, colaborações ou apenas para dizer olá." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/jpg" href="/imgs/favicon.jpg">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="nav-inner">
+                <a href="/html/index.html" class="logo-holder">
+                    <div class="logo">R</div>
+                    <div class="logo-text">Rafael Lopes</div>
+                </a>
+
+                <ul class="nav-links" id="menu">
+                    <li><a href="/html/index.html">Início</a></li>
+                    <li><a href="/html/sobre.html">Sobre</a></li>
+                    <li><a href="/html/projetos.html">Projetos</a></li>
+                    <li><a href="/html/contacto.html" class="button active">Contactos</a></li>
+                </ul>
+
+                <a href="#" class="mobile-toggle" onclick="toggleMobileMenu(); return false;">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Menu mobile fullscreen -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="/html/index.html">Início</a>
+            <a href="/html/sobre.html">Sobre</a>
+            <a href="/html/projetos.html">Projetos</a>
+            <a href="/html/contacto.html">Contactos</a>
+        </div>
+    </header>
+
+    <main style="padding-top: 80px;">
+
+        <!-- PAGE HEADER -->
+        <div class="page-header">
+            <div class="page-header-inner container">
+                <span class="section-label">Fala comigo</span>
+                <h1>Contacto</h1>
+                <p>Tens um projeto, uma ideia ou só queres dizer olá? Preenche o formulário e respondo o mais brevemente possível.</p>
+            </div>
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-layout">
+
+                    <!-- Info de Contacto -->
+                    <div class="contact-info">
+                        <span class="section-label reveal">Informações</span>
+                        <h2 class="section-title reveal">
+                            Vamos criar algo<br>
+                            <span style="color: var(--blue);">juntos</span>
+                        </h2>
+                        <p class="reveal">Estou disponível para projetos freelance, colaborações académicas ou simplesmente para trocar ideias sobre desenvolvimento web.</p>
+
+                        <div class="contact-items">
+
+                            <div class="contact-item reveal">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <div class="contact-item-label">Email</div>
+                                    <div class="contact-item-value">rafael.lopes.t0113786@edu.atec.pt</div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item reveal">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <div class="contact-item-label">Localização</div>
+                                    <div class="contact-item-value">Portugal</div>
+                                </div>
+                            </div>
+
+                            <div class="contact-item reveal">
+                                <div class="contact-icon">⏱️</div>
+                                <div>
+                                    <div class="contact-item-label">Disponibilidade</div>
+                                    <div class="contact-item-value">Disponível para novos projetos</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Redes sociais -->
+                        <div class="contact-social reveal">
+                            <a href="https://github.com/" class="contact-social-link" title="GitHub" aria-label="GitHub">
+                                <img src="/imgs/github.png" alt="GitHub" width="24">
+                            </a>
+                            <a href="https://www.linkedin.com/" class="contact-social-link" title="LinkedIn" aria-label="LinkedIn">
+                                <img src="/imgs/linkedin.png" alt="LinkedIn" width="24">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Formulário -->
+                    <div class="reveal">
+                        <form class="contact-form" id="contactForm" novalidate>
+                            <h3 class="contact-form-title">Enviar Mensagem</h3>
+
+                            <!-- Nome e Email em linha -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="nome">Nome *</label>
+                                    <input type="text" id="nome" class="form-input" placeholder="O teu nome" required autocomplete="name" />
+                                    <span class="form-error" id="nomeError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email *</label>
+                                    <input type="email" id="email" class="form-input" placeholder="teu@email.com" required autocomplete="email" />
+                                    <span class="form-error" id="emailError"></span>
+                                </div>
+                            </div>
+
+                            <!-- Assunto -->
+                            <div class="form-group">
+                                <label class="form-label" for="assunto">Assunto *</label>
+                                <input type="text" id="assunto" class="form-input" placeholder="Assunto da mensagem" required />
+                                <span class="form-error" id="assuntoError"></span>
+                            </div>
+
+                            <!-- Tipo de contacto -->
+                            <div class="form-group">
+                                <label class="form-label" for="tipo">Tipo de contacto</label>
+                                <select id="tipo" class="form-input">
+                                    <option value="">Seleciona uma opção</option>
+                                    <option value="projeto">Projeto / Colaboração</option>
+                                    <option value="feedback">Feedback ao portfólio</option>
+                                    <option value="outro">Outro assunto</option>
+                                </select>
+                            </div>
+
+                            <!-- Mensagem -->
+                            <div class="form-group">
+                                <label class="form-label" for="mensagem">Mensagem *</label>
+                                <textarea id="mensagem" class="form-textarea" placeholder="Escreve a tua mensagem aqui... (mínimo 10 caracteres)" required></textarea>
+                                <span class="form-error" id="mensagemError"></span>
+                            </div>
+
+                            <!-- Botão de envio -->
+                            <button type="submit" class="button" style="width:100%; text-align:center; border:none; cursor:pointer;">
+                                Enviar Mensagem →
+                            </button>
+
+                        </form>
+
+                        <!-- Mensagem de sucesso (oculta por defeito) -->
+                        <div class="form-success-msg" id="formSuccess">
+                            <div class="form-success-icon">✅</div>
+                            <h3>Mensagem enviada!</h3>
+                            <p>Obrigado pelo contacto! Responderei o mais brevemente possível.</p>
+                            <button class="button white" style="margin-top:20px; border:1px solid rgba(0,0,0,0.1); cursor:pointer;" onclick="location.reload()">
+                                Enviar outra mensagem
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="/html/index.html" class="logo-holder footer-logo-holder">
+                <div class="logo-sm">R</div>
+                <div class="logo-text">Rafael Lopes</div>
+            </a>
+            <p class="footer-copy">© 2025 Rafael Lopes | UC604</p>
+            <ul class="footer-links">
+                <li><a href="/html/index.html">Início</a></li>
+                <li><a href="/html/sobre.html">Sobre</a></li>
+                <li><a href="/html/projetos.html">Projetos</a></li>
+                <li><a href="/html/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

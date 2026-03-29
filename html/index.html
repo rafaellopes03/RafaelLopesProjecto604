@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfelio - Rafael Lopes</title>
+
+    <!-- Pré-conexão ao Google Fonts para melhorar a performance de carregamento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importação da fonte Open Sans com suporte a itálico e vários pesos -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Folha de estilos principal -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- Favicon do site -->
+    <link rel="icon" type="image/jpg" href="/imgs/favicon.jpg">
+</head>
+<body>
+
+    <!-- ========================
+         CABEÇALHO / NAVEGAÇÃO
+    ========================= -->
+    <header>
+        <!-- Barra de navegação principal -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-inner">
+
+                <!-- Logo com inicial e nome completo -->
+                <a href="#" class="logo-holder">
+                    <div class="logo">R</div>
+                    <div class="logo-text">Rafael Lopes</div>
+                </a>
+        
+                <!-- Links de navegação desktop -->
+                <ul class="nav-links" id="menu">
+                    <li><a href="/html/index.html">Início</a></li>
+                    <li><a href="/html/sobre.html">Sobre</a></li>
+                    <li><a href="/html/projetos.html">Projetos</a></li>
+                    <!-- Botão de destaque para a página de contacto -->
+                    <li><a href="/html/contacto.html" class="button">Contactos</a></li>
+                </ul>
+        
+                <!-- Ícone hamburger — visível apenas em mobile, activa o menu fullscreen -->
+                <a href="#" class="mobile-toggle" onclick="toggleMobileMenu(); return false;">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+        
+        <!-- Menu fullscreen para dispositivos móveis (controlado via JavaScript) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="/html/index.html">Início</a>
+            <a href="/html/sobre.html">Sobre</a>
+            <a href="/html/projetos.html">Projetos</a>
+            <a href="/html/contacto.html">Contactos</a>
+        </div>
+    </header>
+
+    <!-- Padding-top para compensar a navbar fixa -->
+    <main style="padding-top: 80px;">
+
+        <!-- ========================
+             SECÇÃO HERO
+        ========================= -->
+        <section class="hero container">
+
+            <!-- Lado esquerdo: apresentação e calls-to-action -->
+            <div class="hero-blue">
+                <div>
+                    <h1>
+                        <small>Olá eu sou</small>
+                        Rafael Lopes
+                    </h1>
+                    <p>
+                        Programador Full Stack em ascensão, apaixonado por construir soluções completas do zero. 
+                        <span>Estou sempre pronto para dominar novas stacks e expandir os meus conhecimentos 
+                        técnicos no mundo do desenvolvimento de software.</span>
+                    </p>
+
+                    <!-- Botões de acção principal -->
+                    <div class="call-to-action">
+                        <a href="#" class="button black">Ver Currículo</a>
+                        <a href="/html/contacto.html" class="button white">Contacta-me</a>
+                    </div>
+
+                    <!-- Links para redes sociais -->
+                    <div class="social-links">
+                        <a href="https://github.com/">
+                            <img src="/imgs/github.png" alt="github" width="48">
+                        </a>
+                        <a href="https://www.linkedin.com/">
+                            <img src="/imgs/linkedin.png" alt="linkedin" width="48">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lado direito: foto de perfil -->
+            <div class="hero-yellow">
+                <img src="/imgs/hero-image.png" alt="Foto Perfil" width="100%">
+            </div>
+        </section>
+
+        <!-- ========================
+             CARROSSEL DE LOGOS (Marquee)
+        ========================= -->
+        <!-- Animação infinita com as tecnologias que domino — os ícones estão duplicados para o loop ser contínuo -->
+        <section class="logos container">
+            <div class="marquee">
+                <div class="track">
+                    <!-- Primeiro conjunto -->
+                    <img src="/imgs/html.png" alt="html" width="128">
+                    <img src="/imgs/css.png" alt="css" width="128">
+                    <img src="/imgs/javascript.png" alt="javascript" width="128">
+                    <img src="/imgs/react.png" alt="react" width="128">
+                    <img src="/imgs/csharp.png" alt="csharp" width="128">
+                    <img src="/imgs/Java.png" alt="java" width="128">
+                    <img src="/imgs/ssms.png" alt="ssms" width="128">
+                    <img src="/imgs/mysqlworkbench.png" alt="mysql" width="128">
+                    
+                    <!-- Segundo conjunto (duplicado para continuidade da animação) -->
+                    <img src="/imgs/html.png" alt="html" width="128">
+                    <img src="/imgs/css.png" alt="css" width="128">
+                    <img src="/imgs/javascript.png" alt="javascript" width="128">
+                    <img src="/imgs/react.png" alt="react" width="128">
+                    <img src="/imgs/csharp.png" alt="csharp" width="128">
+                    <img src="/imgs/Java.png" alt="java" width="128">
+                    <img src="/imgs/ssms.png" alt="ssms" width="128">
+                    <img src="/imgs/mysqlworkbench.png" alt="mysql" width="128">
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+             BARRA DE ESTATÍSTICAS
+        ========================= -->
+        <!-- Os data-attributes são lidos pelo JS para animar os números de 0 até ao valor final -->
+        <section class="stats-bar" id="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item reveal">
+                        <span class="stat-num" data-target="4" data-suffix="+">0+</span>
+                        <span class="stat-label">Projetos</span>
+                    </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-num" data-target="6" data-suffix=" meses">0</span>
+                        <span class="stat-label">Em formação</span>
+                    </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-num" data-target="8" data-suffix="">0</span>
+                        <span class="stat-label">Tecnologias</span>
+                    </div>
+                    <div class="stat-item reveal">
+                        <span class="stat-num" data-target="100" data-suffix="%">0%</span>
+                        <span class="stat-label">Dedicação</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+             PROJETOS EM DESTAQUE
+        ========================= -->
+        <section class="section" id="featured">
+            <div class="container">
+                <span class="section-label reveal">Trabalhos recentes</span>
+                <h2 class="section-title reveal">Projetos em Destaque</h2>
+                <p class="section-desc reveal">Alguns dos meus trabalhos mais recentes.</p>
+        
+                <!-- Grelha de cards de projetos -->
+                <div class="projects-grid">
+
+                    <!-- Card 1 -->
+                    <article class="project-card reveal">
+                        <div class="project-thumb"><img src="/imgs/csharp.png" style="width: 75px;"></div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JS</span>
+                            </div>
+                            <h3 class="project-title">Loja Online — Frontend</h3>
+                            <p class="project-desc">Interface completa de e-commerce com carrinho de compras dinâmico, filtros e checkout responsivo.</p>
+                            <div class="project-links">
+                                <a href="/html/projetos.html" class="project-link">Ver detalhes →</a>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <!-- Card 2 -->
+                    <article class="project-card reveal">
+                        <div class="project-thumb"><img src="/imgs/html.png" style="width: 75px;"></div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                            </div>
+                            <h3 class="project-title">Blog Pessoal</h3>
+                            <p class="project-desc">Layout editorial moderno com sistema de posts, categorias e modo claro/escuro.</p>
+                            <div class="project-links">
+                                <a href="/html/projetos.html" class="project-link">Ver detalhes →</a>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <!-- Card 3 -->
+                    <article class="project-card reveal">
+                        <div class="project-thumb"><img src="/imgs/javascript.png" style="width: 75px;"></div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">API</span>
+                            </div>
+                            <h3 class="project-title">App To-Do Interativo</h3>
+                            <p class="project-desc">Gestor de tarefas com localStorage, drag & drop e categorias personalizáveis.</p>
+                            <div class="project-links">
+                                <a href="/html/projetos.html" class="project-link">Ver detalhes →</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+        
+                <!-- Botão para ver todos os projetos -->
+                <div style="text-align:center; margin-top:48px;" class="reveal">
+                    <a href="/html/projetos.html" class="button">Ver Todos os Projetos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================
+             CTA — CHAMADA À ACÇÃO
+        ========================= -->
+        <section class="cta-section">
+            <div class="container" style="text-align:center;">
+                <span class="section-label reveal" style="justify-content:center;">Vamos trabalhar juntos</span>
+                <h2 class="section-title reveal" style="max-width:500px; margin:0 auto 16px;">Tens um projeto em mente?</h2>
+                <p class="reveal" style="margin:0 auto 36px; max-width:460px;">Estou sempre aberto a novas oportunidades e desafios interessantes. Entra em contacto!</p>
+                <a href="/html/contacto.html" class="button reveal">Fala Comigo →</a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- ========================
+         RODAPÉ
+    ========================= -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <!-- Logo no rodapé -->
+            <a href="#" class="logo-holder footer-logo-holder">
+                <div class="logo-sm">R</div>
+                <div class="logo-text">Rafael Lopes</div>
+            </a>
+            <p class="footer-copy">© 2025 Rafael Lopes | UC604</p>
+            <!-- Links de navegação repetidos no rodapé -->
+            <ul class="footer-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="/html/sobre.html">Sobre</a></li>
+                <li><a href="/html/projetos.html">Projetos</a></li>
+                <li><a href="/html/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Script principal carregado no final do body para não bloquear o render da página -->
+    <script src="/js/script.js"></script>
+</body>
+</html>
